@@ -2,10 +2,7 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Sun, Heart, Zap, Calendar } from 'lucide-react'
 import { SPECIALTIES } from '@/lib/constants'
-
-const icons = { sun: Sun, heart: Heart, zap: Zap, calendar: Calendar }
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -18,10 +15,6 @@ const fadeUp = {
 export default function Specialties() {
   return (
     <section id="specialties" className="relative w-full overflow-hidden bg-[var(--color-surface)] py-12 sm:py-20 lg:py-28 scroll-mt-[100px] sm:scroll-mt-24">
-      {/* Atmospheric Background Gradients */}
-      <div className="pointer-events-none absolute -right-36 top-16 h-96 w-96 rounded-full bg-[var(--color-secondary-fixed)]/25 blur-3xl" />
-      <div className="pointer-events-none absolute -left-36 bottom-20 h-80 w-80 rounded-full bg-[var(--color-primary-fixed)]/20 blur-3xl" />
-
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
         {/* Section Intro */}
         <motion.div
@@ -53,8 +46,7 @@ export default function Specialties() {
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
         >
-          {SPECIALTIES.map(({ pillar, title, description, tags, icon, image }, i) => {
-            const Icon = icons[icon as keyof typeof icons]
+          {SPECIALTIES.map(({ pillar, title, description, tags, image }, i) => {
             return (
               <motion.div
                 key={pillar}
@@ -74,11 +66,8 @@ export default function Specialties() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent" />
 
-                    {/* Floating Badge Cluster */}
-                    <div className="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
-                      <div className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-xl bg-white/95 backdrop-blur-md text-[var(--color-primary)] shadow-md border border-white/60 group-hover:scale-110 transition-transform duration-300">
-                        <Icon size={20} strokeWidth={1.8} />
-                      </div>
+                    {/* Floating Pill Label */}
+                    <div className="absolute top-4 right-4 pointer-events-none">
                       <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-[var(--color-primary)] text-[11px] font-semibold tracking-wider uppercase shadow-xs border border-white/60">
                         Pillar {pillar}
                       </span>

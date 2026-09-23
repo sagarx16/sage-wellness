@@ -5,10 +5,6 @@ import { APPROACH_STEPS } from '@/lib/constants'
 export default function Approach() {
   return (
     <section id="approach" className="relative w-full overflow-hidden bg-[var(--color-surface-container)] py-12 sm:py-20 lg:py-28 scroll-mt-[100px] sm:scroll-mt-24">
-      {/* Atmospheric Background Gradients */}
-      <div className="pointer-events-none absolute -left-48 top-10 h-96 w-96 rounded-full bg-[var(--color-secondary-fixed)]/30 blur-3xl" />
-      <div className="pointer-events-none absolute -right-36 bottom-10 h-80 w-80 rounded-full bg-[var(--color-primary-fixed)]/25 blur-3xl" />
-
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <span className="block text-[var(--color-secondary)] uppercase tracking-widest font-semibold" style={{ fontSize: '13px', lineHeight: '18px', letterSpacing: '0.02em' }}>

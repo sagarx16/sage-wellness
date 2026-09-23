@@ -27,10 +27,6 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative w-full overflow-hidden bg-[var(--color-surface)] pb-10 sm:pb-14 lg:pb-28 pt-4 sm:pt-10 lg:pt-12">
-      {/* Atmospheric Background Gradients */}
-      <div className="pointer-events-none absolute -left-48 top-0 h-96 w-96 rounded-full bg-[var(--color-secondary-fixed)]/30 blur-3xl" />
-      <div className="pointer-events-none absolute -right-32 top-40 h-80 w-80 rounded-full bg-[var(--color-primary-fixed)]/20 blur-3xl" />
-
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-8">
           {/* Left Column: Messaging & CTAs */}
@@ -143,9 +139,6 @@ export default function Hero() {
           {/* Right Column: Portrait Card (Desktop & Tablet only) */}
           <div className="relative hidden md:flex justify-center lg:col-span-5 lg:justify-end mt-4 lg:mt-0">
             <div className="relative w-full max-w-md">
-              {/* Organic Backdrop */}
-              <div className="absolute -inset-2 rounded-[2.5rem] bg-gradient-to-tr from-[var(--color-secondary-fixed)]/50 via-[var(--color-tertiary-fixed)]/30 to-[var(--color-surface-container-high)] -rotate-1" />
-              {/* Portrait Frame */}
               <div className="relative overflow-hidden rounded-[2.25rem] bg-[var(--color-surface-container)] shadow-xl border border-[var(--color-outline-variant)]/40">
                 <Image
                   src="/images/dr-maya-reynolds.jpg"
