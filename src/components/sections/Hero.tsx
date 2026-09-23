@@ -137,6 +137,7 @@ export default function Hero() {
                 <ArrowDown size={16} strokeWidth={2} className="transition-transform duration-300 group-hover:translate-y-0.5" />
               </a>
             </div>
+
           </div>
 
           {/* Right Column: Portrait Card (Desktop & Tablet only) */}
