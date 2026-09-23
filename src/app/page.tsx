@@ -38,11 +38,11 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <About />
       <Specialties />
       <Approach />
       <Office />
       <Gallery />
+      <About />
       <FAQ />
       <Contact />
     </>

@@ -13,10 +13,10 @@ export const CONTACT_INFO = {
 }
 
 export const NAV_LINKS = [
-  { label: 'About', href: '#about' },
   { label: 'Specialties', href: '#specialties' },
   { label: 'My Approach', href: '#approach' },
   { label: 'Office & Telehealth', href: '#office' },
+  { label: 'About', href: '#about' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
 ]
