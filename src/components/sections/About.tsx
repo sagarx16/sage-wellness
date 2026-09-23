@@ -54,7 +54,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="relative w-full overflow-hidden bg-[var(--color-surface-container-low)] py-16 sm:py-20 lg:py-28 scroll-mt-20">
+    <section id="about" className="relative w-full overflow-hidden bg-[var(--color-surface-container-low)] py-16 sm:py-20 lg:py-28 scroll-mt-[100px] sm:scroll-mt-24">
       {/* Atmospheric Background Gradients */}
       <div className="pointer-events-none absolute -left-48 top-10 h-96 w-96 rounded-full bg-[var(--color-secondary-fixed)]/25 blur-3xl" />
       <div className="pointer-events-none absolute -right-32 bottom-10 h-80 w-80 rounded-full bg-[var(--color-primary-fixed)]/20 blur-3xl" />

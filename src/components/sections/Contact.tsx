@@ -60,7 +60,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="relative w-full overflow-hidden bg-[var(--color-surface-container-low)] py-12 sm:py-20 lg:py-28 scroll-mt-20">
+    <section id="contact" className="relative w-full overflow-hidden bg-[var(--color-surface-container-low)] py-12 sm:py-20 lg:py-28 scroll-mt-[110px] sm:scroll-mt-24">
       {/* Atmospheric Background Gradients */}
       <div className="pointer-events-none absolute -left-48 top-20 h-96 w-96 rounded-full bg-[var(--color-secondary-fixed)]/30 blur-3xl" />
       <div className="pointer-events-none absolute -right-36 bottom-20 h-96 w-96 rounded-full bg-[var(--color-primary-fixed)]/25 blur-3xl" />

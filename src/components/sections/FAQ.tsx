@@ -62,7 +62,7 @@ function FAQItem({ question, answer, defaultOpen }: { question: string; answer: 
 
 export default function FAQ() {
   return (
-    <section id="faq" className="w-full bg-[var(--color-surface)] py-12 sm:py-20 lg:py-28 scroll-mt-20">
+    <section id="faq" className="w-full bg-[var(--color-surface)] py-12 sm:py-20 lg:py-28 scroll-mt-[100px] sm:scroll-mt-24">
       <div className="mx-auto max-w-[880px] px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center" initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }}>
           <motion.span variants={fadeUp} custom={0} className="block text-[var(--color-secondary)] uppercase tracking-widest font-semibold" style={{ fontSize: '13px', lineHeight: '18px', letterSpacing: '0.02em' }}>

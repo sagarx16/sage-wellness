@@ -213,7 +213,7 @@ export default function Header() {
                 transition={{ duration: 0.2, ease: 'easeOut' }}
                 className="relative z-50 lg:hidden mt-2 p-5 sm:p-6 rounded-3xl bg-[var(--color-surface)]/98 backdrop-blur-2xl shadow-[0_16px_40px_-8px_rgba(49,67,53,0.22)] border border-[var(--color-outline-variant)]/60 overflow-hidden"
               >
-              <div className="flex items-center justify-between pb-3 mb-2 border-b border-[var(--color-outline-variant)]/30">
+              <div className="flex items-center justify-between gap-3 pb-3 mb-2 border-b border-[var(--color-outline-variant)]/30">
                 <div className="flex flex-col">
                   <span className="text-xs font-semibold text-[var(--color-primary)]">
                     Dr. Maya Reynolds, PsyD
@@ -281,15 +281,6 @@ export default function Header() {
                   {CONTACT_INFO.address.split(',')[0]} · {CONTACT_INFO.license}
                 </p>
 
-                <button
-                  type="button"
-                  onClick={() => setMobileOpen(false)}
-                  className="w-full mt-1 py-2 flex items-center justify-center gap-1.5 text-xs font-medium text-[var(--color-on-surface-variant)] hover:text-[var(--color-primary)] transition-colors active:scale-98 border-t border-[var(--color-outline-variant)]/20 pt-2.5"
-                  aria-label="Close navigation menu"
-                >
-                  <X size={14} />
-                  <span>Close Menu</span>
-                </button>
               </div>
             </motion.div>
           </>

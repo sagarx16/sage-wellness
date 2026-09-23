@@ -22,7 +22,11 @@ export default function Office() {
     : `https://maps.google.com/maps?q=${encodeURIComponent(CONTACT_INFO.address)}&t=&z=15&ie=UTF8&iwloc=&output=embed`
 
   return (
-    <section id="office" className="relative w-full overflow-hidden bg-[var(--color-surface)] py-12 sm:py-20 lg:py-28 scroll-mt-20">
+<<<<<<< HEAD
+    <section id="office" className="relative w-full overflow-hidden bg-[var(--color-surface)] py-12 sm:py-20 lg:py-28 scroll-mt-[100px] sm:scroll-mt-24">
+=======
+    <section id="office" className="relative w-full overflow-hidden bg-[var(--color-surface)] py-12 sm:py-20 lg:py-28 scroll-mt-[100px] sm:scroll-mt-24">
+>>>>>>> c08e2cd (Refine mobile hero, header, and booking section layout)
       {/* Atmospheric Background Gradients */}
       <div className="pointer-events-none absolute -right-48 top-10 h-96 w-96 rounded-full bg-[var(--color-secondary-fixed)]/25 blur-3xl" />
       <div className="pointer-events-none absolute -left-36 bottom-10 h-80 w-80 rounded-full bg-[var(--color-primary-fixed)]/20 blur-3xl" />
